@@ -26,6 +26,7 @@ var bio = {
 	    $("#skills").append(HTMLskills.replace("%data%", this.skills[2]));
 	    $("#skills").append(HTMLskills.replace("%data%", this.skills[3]));
 	}
+
 	$("#topContacts").append(
 	    HTMLmobile.replace("%data%",  this.contacts.mobile) +
 		HTMLemail.replace("%data%", this.contacts.email) +
@@ -33,6 +34,15 @@ var bio = {
 		HTMLgithub.replace("%data%", this.contacts.github) +
 		HTMLlocation.replace("%data%", this.contacts.location)
 	);
+
+	$("#footerContacts").append(
+	    HTMLmobile.replace("%data%",  this.contacts.mobile) +
+		HTMLemail.replace("%data%", this.contacts.email) +
+		HTMLtwitter.replace("%data%", this.contacts.twitter) +
+		HTMLgithub.replace("%data%", this.contacts.github) +
+		HTMLlocation.replace("%data%", this.contacts.location)
+	);
+
 
     }
 };
@@ -123,28 +133,33 @@ var work = {
 	    "title": "Web Administrator",
 	    "location": "San Luis Obispo, CA",
 	    "dates": "2005-Present",
-	    "description": "Responsible for developing and maintaining 30+ websites / servers.  Most sites are developed using the Python-based Django Web Framework and hosted"
+	    "description": "Primary web developer and system administrator " +
+		"for the College of Engineering, which includes over 30 websites " +
+		"under its umbrella.  Responsibilities include web design using " +
+		"HTML, CSS and Javascript; backend development using Python and Django; " +
+		"interacting with clients; managing multi-month and multi-year projects; " +
+		"and managing a team of junior developers."
 	},
 	{
 	    "employer": "Obispo Technology Group, Inc.",
 	    "title": "President",
 	    "location": "Templeton, CA",
 	    "dates_worked": "1999-Present",
-	    "description": "Management, software development"
+	    "description": "OTG does contract primarily web development for a collection of clients in North America.  Projects have included an Usher Management application for a large performing arts center, A workflow application for a graphic design and printing business, and general software develop for a credit card processing company."
 	},
 	{
 	    "employer": "OutBack Resource Group",
 	    "title": "Senior Software Engineer",
 	    "location": "San Luis Obispo, CA",
 	    "dates_worked": "1995-1999",
-	    "description": "Software development, testing"
+	    "description": "Participated in many software development project, most notably remote management software for cable modems and related equipment."
 	},
 	{
 	    "employer": "Dega Technology",
-	    "title": "Director of Software Development",
+	    "title": "Software Engineering, Director of Software Development",
 	    "location": "San Luis Obispo, CA",
 	    "dates_worked": "1992-1995",
-	    "description": "Management software development efforts"
+	    "description": "Managed software development for the companies Electronic Parts Catalog products.  Also involved in Technical Sales."
 	}
     ],
 
